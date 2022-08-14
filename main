@@ -1,0 +1,13 @@
+#implement a function that replaces :) with 🙂 and a frown :( with 🙁
+#we are required to call main and the function convert that will do the above
+def main():
+    faces = str(input("Please input hello :), goodbye :( or both "))
+    result = convert(faces)
+    print(result)
+
+def convert(faces):
+    faces1 = faces.replace(":)", "🙂")
+    faces2 = faces1.replace(":(", "🙁")
+    return faces2
+
+main()
